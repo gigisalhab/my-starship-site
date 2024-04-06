@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{{
+  import navbar from './_components/navbar.abell';
+  import globalMeta from './_components/global.meta.abell';
+}}
+
+<html lang="en">
+<head>
+  {{ globalMeta({ title: 'Our Starships' }) }}
+</head>
+<body>
+  {{ navbar({ activeRoute: '/products' }) }}
+  <main class="container">
+    <h1>Explore Our Starships</h1>
+    <section class="starship">
+      <h2>Model X1 - Explorer</h2>
+      <p>The perfect vessel for deep space exploration. Equipped with advanced navigation systems and sustainable life-support.</p>
+    </section>
+    <section class="starship">
+      <h2>Model C3 - Cargo Transporter</h2>
+      <p>Efficiently transports goods across the galaxy. Features state-of-the-art cargo handling systems and defense mechanisms.</p>
+    </section>
+  </main>
+</body>
+</html>

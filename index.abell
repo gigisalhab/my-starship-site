@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{{
+  import navbar from './_components/navbar.abell';
+  import globalMeta from './_components/global.meta.abell';
+}}
+<html lang="en">
+<head>
+  {{ globalMeta }}
+</head>
+<body>
+  {{ navbar({ activeRoute: '/' }) }}
+  <main>
+    <div class="container">
+      <h1>Welcome to Galactic Starships Inc.</h1>
+      <p class="subtext">Leading the way in interstellar travel. Explore our advanced fleet of starships designed for exploration, trade, and defense across the galaxy.</p>
+      <!-- Link to Products Page, make sure this URL matches your routing setup -->
+      <a class="button primary" href="/products">View Our Starships</a>
+      <!-- Additional Call to Action for Contact -->
+      <p>Contact us for custom starship inquiries or partnerships. Reach out to discuss how we can assist in achieving your galactic ambitions.</p>
+      <a class="button secondary" href="mailto:contact@galacticstarships.com">Contact Us</a>
+    </div>
+  </main>
+  <script src="./client-assets/index-client.js" type="module"></script>
+</body>
+</html>
